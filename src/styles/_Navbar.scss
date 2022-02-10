@@ -6,11 +6,15 @@
     align-items: center;
     color: white;
     padding: 10px;
-    .contenedor-links{
+    .contenedor-links-nav{
         margin: 10px;
         display: flex;
-        button{
+        list-style: none;
+        
+        li, a{
             margin: 5px;
+            text-decoration: none;
+            color: white;
         }
     }
 }

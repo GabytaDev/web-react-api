@@ -1,9 +1,10 @@
+import "../styles/_SeccionPrincipal.scss";
 
 const SeccionPrincipal = ()=>{
      return (
-         <div>
-
-         </div>
+        <div>
+            
+        </div>
      )
 
 }
