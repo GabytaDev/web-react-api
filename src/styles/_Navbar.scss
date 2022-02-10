@@ -1,0 +1,16 @@
+
+.contenedor-nav{
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    .contenedor-links{
+        margin: 10px;
+        display: flex;
+        button{
+            margin: 5px;
+        }
+    }
+}

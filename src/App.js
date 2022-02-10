@@ -1,4 +1,4 @@
-
+import "./App.scss";
 import NavBar from "./components/Navbar";
 import SeccionPrincipal from "./components/Seccion-principal";
 import SeccionDetalle from "./components/Seccion-detalle";
