@@ -15,6 +15,10 @@ const SeccionPrincipal = ()=>{
                     <button id="buscar" className="btn-buscar">Search</button>
                 </div> 
            </section>  
+           <section className="contenedor-tarjetas">
+              <div className="tarjeta-personaje"></div>
+
+           </section>
         </main>
      )
 
