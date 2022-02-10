@@ -11,6 +11,9 @@ const SeccionPrincipal = ()=>{
                   <option>Episodes</option>
                </select>
             </form>
+            <div className="seccion-boton-buscar">
+                    <button id="buscar" className="btn-buscar">Search</button>
+                </div> 
            </section>  
         </main>
      )
