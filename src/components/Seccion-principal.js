@@ -33,8 +33,7 @@ const SeccionPrincipal = ()=>{
                           <img src={personaje.image}></img>
                        </div>
                     </div>
-                 ))}
-              
+                 ))} 
            </section>
         </main>
      )
