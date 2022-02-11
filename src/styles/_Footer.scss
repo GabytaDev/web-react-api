@@ -1,4 +1,11 @@
 .content-footer{
     display: flex;
     justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    .icon{
+        margin: 5px;
+        
+    }
 }
