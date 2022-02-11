@@ -1,0 +1,28 @@
+.seccion-busqueda{
+    background-color: #d7d8d6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    .input{
+        margin: 10px;
+    }
+    .btn-buscar{
+        margin: 10px;
+    }
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    .tarjeta-personaje{
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 20px;
+        text-align: center;
+        .img-tarjeta{
+            padding: 5px;
+        }
+    }
+}

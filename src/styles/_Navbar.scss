@@ -1,0 +1,20 @@
+
+.contenedor-nav{
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    .contenedor-links-nav{
+        margin: 10px;
+        display: flex;
+        list-style: none;
+        
+        li, a{
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
