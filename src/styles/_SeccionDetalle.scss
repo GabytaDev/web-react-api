@@ -1,0 +1,15 @@
+.modal-oculto{
+    display: none;
+}
+.seccion-detalle{
+   background-color: rgba(243, 243, 242, 0.767);
+   display: flex;
+   justify-content: center;
+   padding: 30px;
+   .modal-detalle{
+       width: 500px;
+       height: 500px;
+       border: 1px solid rgb(75, 74, 74);
+       border-radius: 5px;
+   }
+}
