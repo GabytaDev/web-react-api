@@ -28,10 +28,12 @@ const SeccionPrincipal = ()=>{
            <section className="contenedor-tarjetas">
                  {personajes.map((personaje)=>(
                     <div className="tarjeta-personaje">
-                       <h4>{personaje.name}</h4>
+                       <h4 key={personaje.id}>{personaje.name}</h4>
                        <div className="img-tarjeta">
                           <img src={personaje.image}></img>
                        </div>
+                       <p>Specie:{personaje.species}</p>
+                       <p>Gender:{personaje.gender}</p>
                     </div>
                  ))} 
            </section>
