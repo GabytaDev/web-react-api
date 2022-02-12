@@ -29,12 +29,12 @@ const SeccionPrincipal = ()=>{
            <section className="contenedor-tarjetas">
                  {personajes.map((personaje)=>(
                     <div key={personaje.id} className="tarjeta-personaje">
-                       <h4>{personaje.name}</h4>
+                       <Typography variant="h5">{personaje.name}</Typography>
                        <div className="img-tarjeta">
-                          <img src={personaje.image}></img>
+                          <img src={personaje.image} alt="image characters"></img>
                        </div>
-                       <Typography variant="body1">Specie:{personaje.species}</Typography>
-                       <Typography variant="body1">Gender:{personaje.gender}</Typography>
+                       <Typography variant="body1">Specie: {personaje.species}</Typography>
+                       <Typography variant="body1">Gender: {personaje.gender}</Typography>
                     </div>
                  ))} 
            </section>
