@@ -1,5 +1,6 @@
 import "../styles/_SeccionPrincipal.scss";
 import { useState, useEffect} from "react";
+import Typography from '@mui/material/Typography';
 
 const SeccionPrincipal = ()=>{
    const [personajes, setPersonajes] = useState([]);
@@ -8,7 +9,7 @@ const SeccionPrincipal = ()=>{
       fetch("https://rickandmortyapi.com/api/character")
       .then((res)=> res.json())
       .then((data)=> setPersonajes(data.results));
-      console.log(setPersonajes)
+       
    },[])
 
      return (
@@ -27,11 +28,13 @@ const SeccionPrincipal = ()=>{
            </section>  
            <section className="contenedor-tarjetas">
                  {personajes.map((personaje)=>(
-                    <div className="tarjeta-personaje">
-                       <h4>{personaje.name}</h4>
+                    <div key={personaje.id} className="tarjeta-personaje">
+                       <Typography variant="h5">{personaje.name}</Typography>
                        <div className="img-tarjeta">
-                          <img src={personaje.image}></img>
+                          <img src={personaje.image} alt="image characters"></img>
                        </div>
+                       <Typography variant="body1">Specie: {personaje.species}</Typography>
+                       <Typography variant="body1">Gender: {personaje.gender}</Typography>
                     </div>
                  ))} 
            </section>
