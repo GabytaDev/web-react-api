@@ -27,18 +27,9 @@ const NavBar = ()=>{
           </Typography>
           <Button color="inherit">Character</Button>
           <Button color="inherit">Episodes</Button> 
-          {/* <div>
-                <ul className="contenedor-links-nav">
-                    <div className="link" id="link-characters"><li><a href="#characters">Characters</a></li></div>
-                    <div className="link" id="link-episodes"><li><a href="#episodes">Details</a></li></div>   
-                </ul>
-            </div> */}
         </Toolbar>
       </AppBar>
     </Box>
-            
-           
-            
       
     )
 }
