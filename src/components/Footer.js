@@ -2,18 +2,19 @@ import "../styles/_Footer.scss"
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import Box from '@mui/material/Box';
+
+
 const Footer = ()=>{
     return(
-        <div>
-            <section className="content-footer">
-                <Typography variant="h6">Hecho por Gabriela Loyola Carpio</Typography>
-                <div className="content-icons">
-                <div className="icon"> <GitHubIcon sx={{ fontSize: 40 }} /></div>
-                <div className="icon"> <MailOutlineIcon sx={{ fontSize: 40 }} /></div>
-                </div>
-               
-
-            </section>
+        <div> 
+            <Box sx={{bgcolor:'primary.main',color: 'primary.contrastText', p:2 }}>
+                <Typography variant="h6" sx={{display:"flex", justifyContent:"center"}}>Hecho por Gabriela Loyola Carpio</Typography>
+                    <Box sx={{display:"flex", justifyContent:"center"}}>
+                        <GitHubIcon sx={{ fontSize: 40 }} className="icon"/>
+                         <MailOutlineIcon sx={{ fontSize: 40 }} className="icon" />
+                    </Box>
+            </Box>  
         </div>
     )
 }

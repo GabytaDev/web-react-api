@@ -1,17 +1,8 @@
-.content-footer{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgba(95, 158, 160, 0.705);
-    color: rgb(65, 64, 64);
-    padding: 10px;
+
     .content-icons{
         display: flex;
     }
     .icon{
         margin: 5px;
-        color: rgb(65, 64, 64);
+        cursor: pointer;
     }
-}

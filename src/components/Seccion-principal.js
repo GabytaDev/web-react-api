@@ -46,7 +46,7 @@ const SeccionPrincipal = () => {
             {personajes.map((personaje) => (
                <div key={personaje.id} >
                   <CardActionArea>
-                     <Card sx={{m:1}}>
+                     <Card sx={{m:1, p:1}}>
                         <Typography variant="h5">{personaje.name}</Typography>
                         <CardMedia>
                            <div className="img-tarjeta">
