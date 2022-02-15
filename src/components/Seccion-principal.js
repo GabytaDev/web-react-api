@@ -2,7 +2,7 @@ import "../styles/_SeccionPrincipal.scss";
 import { useState, useEffect } from "react";
 import Typography from '@mui/material/Typography';
 import Busqueda from "./Busqueda";
-
+import Box from '@mui/material/Box';
 
 const SeccionPrincipal = () => {
    const [personajes, setPersonajes] = useState([]);
@@ -25,11 +25,15 @@ const SeccionPrincipal = () => {
 
    return (
       <main>
-         <section className="seccion-busqueda">
+         <section>
+            <Box sx={{display: 'flex',justifyContent:"center",
+            m: 1,
+            p: 1}}>
             <Busqueda
                actualizarInput={handleChange}
                clickBoton = {handleClick}
             />
+            </Box>
          </section>
          <section className="contenedor-tarjetas">
 
