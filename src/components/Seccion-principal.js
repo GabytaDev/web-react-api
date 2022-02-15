@@ -3,6 +3,10 @@ import { useState, useEffect } from "react";
 import Typography from '@mui/material/Typography';
 import Busqueda from "./Busqueda";
 import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActionArea from "@mui/material/CardActionArea";
+import CardContent from '@mui/material/CardContent';
+import { CardMedia } from "@mui/material";
 
 const SeccionPrincipal = () => {
    const [personajes, setPersonajes] = useState([]);
@@ -14,37 +18,47 @@ const SeccionPrincipal = () => {
          .then((res) => res.json())
          .then((data) => setPersonajes(data.results));
 
-   },[busqueda]);
+   }, [busqueda]);
 
    const handleChange = (e) => {
       setValorInput(e.target.value)
    }
-   const handleClick = ()=>{
+   const handleClick = () => {
       setBusqueda(valorInput)
    }
 
    return (
       <main>
          <section>
-            <Box sx={{display: 'flex',justifyContent:"center",
-            m: 1,
-            p: 1}}>
-            <Busqueda
-               actualizarInput={handleChange}
-               clickBoton = {handleClick}
-            />
+            <Box sx={{
+               display: 'flex', justifyContent: "center",
+               m: 1,
+               p: 1
+            }}>
+               <Busqueda
+                  actualizarInput={handleChange}
+                  clickBoton={handleClick}
+               />
             </Box>
          </section>
          <section className="contenedor-tarjetas">
 
             {personajes.map((personaje) => (
-               <div key={personaje.id} className="tarjeta-personaje">
-                  <Typography variant="h5">{personaje.name}</Typography>
-                  <div className="img-tarjeta">
-                     <img src={personaje.image} alt="image characters"></img>
-                  </div>
-                  <Typography variant="body1">Specie: {personaje.species}</Typography>
-                  <Typography variant="body1">Gender: {personaje.gender}</Typography>
+               <div key={personaje.id} >
+                  <CardActionArea>
+                     <Card sx={{m:1}}>
+                        <Typography variant="h5">{personaje.name}</Typography>
+                        <CardMedia>
+                           <div className="img-tarjeta">
+                              <img src={personaje.image} alt="image characters"></img>
+                           </div>
+                        </CardMedia>
+                        <CardContent>
+                           <Typography variant="body1">Specie: {personaje.species}</Typography>
+                           <Typography variant="body1">Gender: {personaje.gender}</Typography>
+                        </CardContent>
+                     </Card>
+                  </CardActionArea>
                </div>
             ))}
          </section>

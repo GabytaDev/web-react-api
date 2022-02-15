@@ -8,16 +8,16 @@
 
 .contenedor-tarjetas{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 10px;
     .tarjeta-personaje{
-        border: 1px solid black;
-        border-radius: 5px;
         margin: 20px;
         text-align: center;
         color: rgb(65, 64, 64);
         .img-tarjeta{
             padding: 5px;
+           
         }
     }
 }
