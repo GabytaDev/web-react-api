@@ -1,8 +1,10 @@
-import "../styles/_SeccionDetalle.scss";
+import "../styles/_DetallePersonaje.scss";
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 import {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 
-const SeccionDetalle = ()=>{
+const DetallePersonaje = ()=>{
     const param = useParams()
     const [characters, setCharacters] = useState([])
     useEffect(()=>{
@@ -14,15 +16,20 @@ const SeccionDetalle = ()=>{
     return(
         <div className="seccion-detalle">
             <div className="modal-detalle">
-                <h4>{characters.name}</h4>
-                <h3>{characters.status}</h3>
+                <h2>{characters.name}</h2>
                 <div className="img-tarjeta">
                    <img src={characters.image}></img>
                 </div>
+                <CardContent>
+                <Typography variant="body1">Status: {characters.status}</Typography>   
+                 <Typography variant="body1">Specie: {characters.species}</Typography>
+                 <Typography variant="body1">Gender: {characters.gender}</Typography>
+                </CardContent>
+               
                 
             </div>
         </div>
     )
 }
 
-export default SeccionDetalle;
+export default DetallePersonaje;

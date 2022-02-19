@@ -1,11 +1,11 @@
 import "../styles/_SeccionPrincipal.scss";
+import "../styles/_CardContent.scss";
 import { useState, useEffect } from "react";
 import Typography from '@mui/material/Typography';
 import Busqueda from "./Busqueda";
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActionArea from "@mui/material/CardActionArea";
-import CardContent from '@mui/material/CardContent';
 import { CardMedia } from "@mui/material";
 
 const SeccionPrincipal = () => {
@@ -53,10 +53,7 @@ const SeccionPrincipal = () => {
                               <img src={personaje.image} alt="image characters"></img>
                            </div>
                         </CardMedia>
-                        <CardContent>
-                           <Typography variant="body1">Specie: {personaje.species}</Typography>
-                           <Typography variant="body1">Gender: {personaje.gender}</Typography>
-                        </CardContent>
+                       
                      </Card>
                   </CardActionArea>
                </div>

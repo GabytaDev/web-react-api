@@ -1,4 +1,7 @@
-
+import "../styles/_CardContent.scss"
+import CardActionArea from "@mui/material/CardActionArea";
+import Card from '@mui/material/Card';
+import Typography from '@mui/material/Typography';
 import {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 
@@ -11,19 +14,23 @@ const Characters = ()=>{
     }, [])
 
     return (
-        <div>
+        <div >
             <h2>Characters</h2>
-            <div className="contenedor-tarjetas">
-            {characters.map(character =>(
-               <Link to={`/characters/${character.id}`}>
-                   <div>
-                       <h3>{character.name}</h3>
-                       <h3>{character.status}</h3>
-                       <img src={character.image}/>
-                   </div>
-               </Link> 
+            <section className="contenedor-tarjetas">
+             {characters.map((character)=>(
+                <CardActionArea className="tarjeta">
+                 <Card sx={{m:1, p:1}}>
+                    <Link to={`/characters/${character.id}`}>
+                        <div>
+                        <Typography variant="h5">{character.name}</Typography>
+                            
+                            <img src={character.image} className="img-tarjeta"/>
+                        </div>
+                    </Link> 
+                </Card>
+               </CardActionArea>
             ))}
-            </div>
+            </section>
         </div>
     )
 }

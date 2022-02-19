@@ -1,0 +1,17 @@
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    .tarjeta{
+        margin: 20px;
+        text-align: center;
+        color: rgb(65, 64, 64);
+        width: 400px;
+        .img-tarjeta{
+            padding: 5px;
+           
+        }
+    }
+}
+
