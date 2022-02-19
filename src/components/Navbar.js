@@ -5,7 +5,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
+
 
 const NavBar = ()=>{
     return(
@@ -13,7 +14,8 @@ const NavBar = ()=>{
         <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
         <Toolbar>
-          <IconButton
+        <Link to="/" fontSize="28" sx={{ color: 'primary.main' }}>Home</Link>
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -21,12 +23,15 @@ const NavBar = ()=>{
             sx={{ mr: 2 }}
           >
             <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          </IconButton> */}
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, m:1}}>
             Finder
           </Typography>
-          <Button color="inherit">Character</Button>
-          <Button color="inherit">Episodes</Button> 
+          
+          <Link to="/characters" fontSize="28" sx={{ color: 'primary.main' }}>Characters </Link>
+          <Link to="/episodes" fontSize="28" sx={{ color: 'primary.main' }}>Episodes </Link>
+          <Link to="/locations" fontSize="28" sx={{ color: 'primary.main' }}>Locations </Link>
+          
         </Toolbar>
       </AppBar>
     </Box>
