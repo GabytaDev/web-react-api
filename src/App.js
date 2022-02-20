@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Episodes from "./components/Episodes";
 import Locations from "./components/Locations";
 import DetalleEpisodio from "./components/DetalleEpisodio";
+import DetalleUbicacion from "./components/DetalleUbicacion";
 
 const App = ()=>{
 
@@ -22,9 +23,8 @@ const App = ()=>{
         <Route path="/locations" element={<Locations/>}/>
         <Route path="/characters/:idCharacter" element={<DetallePersonaje/>}/>
         <Route path="/episodes/:idEpisode" element={<DetalleEpisodio/>}/>
+        <Route path="/locations/:idLocation" element={<DetalleUbicacion/>}/>
       </Routes>
-
-     
      <Footer/> 
       </BrowserRouter>
     </div>
