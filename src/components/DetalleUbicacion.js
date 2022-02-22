@@ -15,6 +15,7 @@ const DetalleUbicacion = ()=>{
     },[param.idLocation])
 
     return(
+        <div className="contenedor-detalle">
         <div className="seccion-detalle">
             <div className="modal-detalle-card">
                 <h2> Location: {locations.name}</h2>
@@ -23,6 +24,7 @@ const DetalleUbicacion = ()=>{
                  <Typography variant="body1"> Dimension: {locations.dimension}</Typography>
                 </CardContent> 
             </div>
+        </div>
         </div>
     )
 }

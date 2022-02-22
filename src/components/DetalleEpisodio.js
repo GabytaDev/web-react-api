@@ -15,7 +15,8 @@ const DetalleEpisodio = ()=>{
     },[param.idEpisode])
     
     return(
-        <div>
+        
+        <div className="contenedor-detalle">
         <div className="seccion-detalle">
             <div className="modal-detalle-card">
                 <h2> Episode: {episodes.name}</h2>

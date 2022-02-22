@@ -1,13 +1,17 @@
- .seccion-detalle{
+ .contenedor-detalle{
+     height: 100vh;
      background-color: rgba(243, 243, 242, 0.767);
-    display: flex;
-    justify-content: center;
-    padding: 60px;
-        .modal-detalle-card{
-            padding: 10px;
-            text-align: center;
-            border: 1px solid rgb(75, 74, 74);
-            border-radius: 5px;
-        }
-    }
+    .seccion-detalle{
+       display: flex;
+       justify-content: center;
+       padding: 10px;
+           .modal-detalle-card{
+               padding: 10px;
+               text-align: center;
+               border: 1px solid rgb(75, 74, 74);
+               border-radius: 5px;
+           }
+       }
+ }
+ 
 

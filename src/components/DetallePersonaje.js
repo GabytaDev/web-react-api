@@ -14,6 +14,7 @@ const DetallePersonaje = () => {
     }, [param.idCharacter])
 
     return (
+        <div className="contenedor-detalle">
         <div className="seccion-detalle">
             <div className="modal-detalle-card">
                 <h2>{characters.name}</h2>
@@ -27,6 +28,7 @@ const DetallePersonaje = () => {
                 </CardContent>
 
             </div>
+        </div>
         </div>
     )
 }
