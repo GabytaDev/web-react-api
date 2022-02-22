@@ -12,7 +12,7 @@ const DetalleUbicacion = ()=>{
         fetch(`https://rickandmortyapi.com/api/location/${param.idLocation}`)
         .then(res=> (res.json()))
         .then (data=>setLocations(data))
-    },[])
+    },[param.idLocation])
 
     return(
         <div className="seccion-detalle">

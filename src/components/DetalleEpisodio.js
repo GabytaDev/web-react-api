@@ -12,7 +12,7 @@ const DetalleEpisodio = ()=>{
        fetch(`https://rickandmortyapi.com/api/episode/${param.idEpisode}`) 
        .then((res=> res.json()))
        .then(data=> setEpisodes(data))
-    },[])
+    },[param.idEpisode])
     
     return(
         <div>
