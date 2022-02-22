@@ -18,7 +18,7 @@ const Episodes = ()=>{
             <Typography variant="h4" sx={{m:1, p:1}}> Episodes</Typography>
             <section className="contenedor-tarjetas">
              {episodes.map((episode)=>(
-                <CardActionArea className="tarjeta">
+                <CardActionArea key={episode.id} className="tarjeta" >
                  <Card sx={{m:1, p:1}}>
                     <Link to={`/episodes/${episode.id}`} className="style-link">
                         <div>

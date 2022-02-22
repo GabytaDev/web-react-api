@@ -20,7 +20,7 @@ const Characters = ()=>{
             <Typography variant="h4" sx={{m:1, p:1}}>Characters</Typography>
             <section className="contenedor-tarjetas">
              {characters.map((character)=>(
-                <CardActionArea className="tarjeta">
+                <CardActionArea key={character.id} className="tarjeta">
                  <Card sx={{m:1, p:1}}>
                     <Link to={`/characters/${character.id}`} className="style-link">
                         <div>
