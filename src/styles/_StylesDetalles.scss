@@ -1,12 +1,13 @@
-.seccion-detalle{
-    background-color: rgba(243, 243, 242, 0.767);
+ .seccion-detalle{
+     background-color: rgba(243, 243, 242, 0.767);
     display: flex;
     justify-content: center;
-    padding: 30px;
-    .modal-detalle-card{
-        padding: 10px;
-        text-align: center;
-        border: 1px solid rgb(75, 74, 74);
-        border-radius: 5px;
+    padding: 60px;
+        .modal-detalle-card{
+            padding: 10px;
+            text-align: center;
+            border: 1px solid rgb(75, 74, 74);
+            border-radius: 5px;
+        }
     }
-}
+

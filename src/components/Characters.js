@@ -1,5 +1,4 @@
 import "../styles/_CardContent.scss"
-import "../styles/_Characters.scss"
 import {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import CardActionArea from "@mui/material/CardActionArea";

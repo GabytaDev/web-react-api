@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Box from '@mui/material/Box';
-
+import Container from '@mui/material/Container';
 
 const Footer = ()=>{
     return(
