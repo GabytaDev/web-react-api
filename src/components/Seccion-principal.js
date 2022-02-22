@@ -1,4 +1,3 @@
-import "../styles/_SeccionPrincipal.scss";
 import "../styles/_CardContent.scss";
 import { useState, useEffect } from "react";
 import Typography from '@mui/material/Typography';
