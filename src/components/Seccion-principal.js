@@ -49,7 +49,7 @@ const SeccionPrincipal = () => {
                         <Typography variant="h5">{personaje.name}</Typography>
                         <CardMedia>
                            <div className="img-tarjeta">
-                              <img src={personaje.image} alt="image characters"></img>
+                              <img src={personaje.image} alt="imagen-personaje"></img>
                            </div>
                         </CardMedia>
                        

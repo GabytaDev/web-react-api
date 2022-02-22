@@ -26,7 +26,7 @@ const Characters = ()=>{
                         <div>
                         <Typography variant="h5">{character.name}</Typography>
                             
-                            <img src={character.image} className="img-tarjeta"/>
+                            <img src={character.image} className="img-tarjeta" alt="imagen-personaje"/>
                         </div>
                     </Link> 
                 </Card>

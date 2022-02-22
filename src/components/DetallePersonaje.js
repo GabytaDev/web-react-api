@@ -19,7 +19,7 @@ const DetallePersonaje = () => {
             <div className="modal-detalle-card">
                 <h2>{characters.name}</h2>
                 <div>
-                    <img src={characters.image}></img>
+                    <img src={characters.image} alt="imagen-personaje"></img>
                 </div>
                 <CardContent>
                     <Typography variant="body1">Status: {characters.status}</Typography>
