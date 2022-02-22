@@ -1,6 +1,5 @@
 import "../styles/_StylesDetalles.scss";
 import CardContent from '@mui/material/CardContent';
-import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import {useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
